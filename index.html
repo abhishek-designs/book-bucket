@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/5514dc631b.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Welcome | Book Bucket</title>
+</head>
+<body>
+    <!-- Book app container -->
+    <div class="container">
+        <h2 class="head"><span class="primary">Book</span> Bucket</h2>
+        <!-- Inputting section -->
+        <div class="box book-input-contain">
+            <form id="book-input-form">
+                <div class="form-grp">
+                    <label for="title-field">Enter Title</label>
+                    <input type="text" name="title-field" id="title-field" class="title-field" autocomplete="off">
+                </div>
+                <div class="form-grp">
+                    <label for="author-field">Enter Author</label>
+                    <input type="text" name="author-field" id="author-field" class="author-field" autocomplete="off">
+                </div>
+                <div class="form-grp">
+                    <label for="isbn-field">Enter ISBN no.</label>
+                    <input type="text" name="isbn-field" id="isbn-field" class="isbn-field" autocomplete="off">
+                </div>
+                <input type="submit" value="Submit" class="btn add-btn">
+            </form>
+
+        </div>
+        <!-- Output section -->
+        <div class="box book-output-contain">
+            <table class="book-list">
+                <thead class="book-list-head">
+                    <tr>
+                        <td>Title</td>
+                        <td>Author</td>
+                        <td>ISBN no.</td>
+                        <td></td>
+                    </tr>
+                </thead>
+                <tbody class="book-list-content">
+                    <!-- Content injected dynamically from javascript -->
+                </tbody>
+            </table>
+        </div>
+        <!-- Message tab -->
+    </div>
+    <!-- ES5 script -->
+    <!-- <script src="main.js"></script> -->
+    <!-- ES6 script -->
+    <script src="main-es6.js"></script>
+</body>
+</html>
